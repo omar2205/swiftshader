@@ -24,6 +24,7 @@ jobs:
 
     - name: Use cmake
       run: |
+        del C:/Program Files/Git/bin/sh.exe
         cd build
-        cmake .. -G "MinGW Makefiles"
+        cmake .. -G " MSYS Makefiles"
         cmake --build . --parallel
